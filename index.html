@@ -8,13 +8,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <title>WebStudio - Home</title>
+    <title>WebStudio - Estudio</title>
   </head>
   <body>
     <header class="header">
       <div class="header__container container">
         <nav class="header__navbar">
-          <a class="navbar--logo" href="./index.html">WebStudio</a>
+          <a class="navbar--logo logo" href="./index.html">WebStudio</a>
           <ul class="navbar__list list">
             <li class="navbar__item">
               <a class="navbar__item--link link active" href="./index.html">Estudio</a>
@@ -25,10 +25,10 @@
             <li class="navbar__item"><a class="navbar__item--link link" href="#">Contactos</a></li>
           </ul>
         </nav>
-        <ul class="header__contacts list">
+        <ul class="navbar__list list contacts">
           <li class="contacts__item">
             <a class="contacts__item--link link" href="mailto:info@devstudio.com">
-              <svg class="contact--icon" width="16px" height="12px">
+              <svg class="contacts--icon" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-sobre"></use>
               </svg>
               info@devstudio.com
@@ -36,7 +36,7 @@
           </li>
           <li class="contacts__item">
             <a class="contacts__item--link link" href="tel:+525555296000">
-              <svg class="contact--icon" width="10px" height="16px">
+              <svg class="contacts--icon" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-celular"></use>
               </svg>
               +52 55 5529 6000
@@ -49,7 +49,7 @@
       <section class="hero section">
         <div class="hero__container container">
           <h1 class="hero--title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-          <button class="hero--btn btn active" type="button" data-modal-open>
+          <button class="hero--btn btn" type="button" data-modal-open>
             Solicite nuestro servicio
           </button>
         </div>
@@ -367,7 +367,7 @@
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__address">
-          <a class="footer--logo" href="./index.html">WebStudio</a>
+          <a class="footer--logo logo" href="./index.html">WebStudio</a>
           <address class="address">
             <ul class="address__list list">
               <li class="address__item">Calz. Ticomán 500, Ciudad de México, CDMX, México</li>
@@ -383,7 +383,7 @@
           </address>
         </div>
         <div class="footer__social">
-          <h3 class="footer__social--text">ENCUENTRENOS EN</h3>
+          <h3 class="footer__social--title">ENCUENTRENOS EN</h3>
           <ul class="social__list list">
             <li class="social__item">
               <a class="social__item--link link" href="#">
@@ -416,7 +416,7 @@
           </ul>
         </div>
         <div class="footer__suscribe">
-          <h3 class="suscribe--title">SUSCRÍBASE al boletín informativo</h3>
+          <h3 class="footer__suscribe--title">SUSCRÍBASE al boletín informativo</h3>
           <form class="suscribe__form">
             <input
               class="suscribe--input"

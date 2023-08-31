@@ -2,5 +2,17 @@
 @import 'utils/mixins';
 
 @import 'components/base';
+@import 'components/logo';
 @import 'components/header';
+@import 'components/footer';
 @import 'components/modal';
+
+// Estudio
+@import 'components/hero';
+@import 'components/targets';
+@import 'components/services';
+@import 'components/clients';
+@import 'components/team';
+
+// Portfolio
+@import 'components/portfolio';

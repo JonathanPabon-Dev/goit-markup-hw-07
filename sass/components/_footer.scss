@@ -1,0 +1,118 @@
+.footer {
+  background-color: $main-bg-color;
+  &__container {
+    display: flex;
+    column-gap: 70px;
+  }
+  &__address {
+    padding: 60px 0;
+  }
+  .address {
+    margin-top: 6px;
+    font-style: normal;
+    &__list {
+      width: 231px;
+      row-gap: 9px;
+    }
+    &__item {
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $white;
+      &--link {
+        color: $white-o60;
+        &:hover,
+        &:focus,
+        &:focus-within {
+          color: $highlighted-color;
+        }
+      }
+    }
+  }
+  &__social {
+    padding-top: 72px;
+    &--title {
+      padding-bottom: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      color: $white;
+      text-transform: uppercase;
+    }
+    .social {
+      &__list {
+        display: flex;
+        gap: 10px;
+      }
+      &__item {
+        &--link {
+          @include createFlex;
+          width: 44px;
+          height: 44px;
+          background-color: $white-o10;
+          color: $white;
+          border-radius: 50px;
+          transition: 250ms linear;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          &:hover,
+          &:focus,
+          &:focus-within {
+            background-color: $highlighted-color;
+            color: $white;
+          }
+        }
+        &--icon {
+          width: 20px;
+          height: 20px;
+          fill: currentColor;
+        }
+      }
+    }
+  }
+  &__suscribe {
+    padding-top: 72px;
+    &--title {
+      padding-bottom: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      color: $white;
+      text-transform: uppercase;
+    }
+    .suscribe {
+      &__form {
+        display: flex;
+        gap: 12px;
+      }
+      &--input {
+        width: 358px;
+        height: 50px;
+        padding: 0 16px;
+        line-height: 1.25;
+        background: none;
+        color: $white;
+        border-radius: 4px;
+        border: 1px solid $white-o30;
+        box-shadow: 0px 4px 4px 0px $black-o15;
+      }
+      &--btn {
+        width: 200px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border-radius: 4px;
+        background-color: $highlighted-color;
+        color: $white;
+        font-weight: 700;
+        line-height: 1.875;
+        box-shadow: 0px 4px 4px 0px $black-o15;
+      }
+      &--icon {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+      }
+    }
+  }
+}

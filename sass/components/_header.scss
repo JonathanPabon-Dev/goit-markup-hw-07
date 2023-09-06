@@ -1,6 +1,5 @@
 .header {
-  display: flex;
-  align-items: center;
+  @include createFlex;
   height: 80px;
   border: 1px solid $border-color;
   &__container {
@@ -10,22 +9,20 @@
     display: flex;
   }
   .navbar {
-    &--logo {
+    &__logo {
       margin-right: 93px;
     }
     &__list {
       @include createFlex;
       gap: 50px;
     }
-    &__item {
-      &--link {
-        &:hover,
-        &:focus,
-        &:focus-within {
-          color: $highlighted-color;
-        }
+    &__link {
+      &:hover,
+      &:focus,
+      &:focus-within {
+        color: $highlighted-color;
       }
-      .active {
+      &--active {
         color: $highlighted-color;
         &::after {
           content: '';
@@ -40,7 +37,7 @@
     }
   }
   .contacts {
-    &__item--link {
+    &__link {
       @include createFlex;
       color: $second-text-color;
       &:hover {
@@ -48,7 +45,7 @@
         fill: $highlighted-color;
       }
     }
-    &--icon {
+    &__icon {
       fill: currentColor;
       margin-right: 10px;
     }

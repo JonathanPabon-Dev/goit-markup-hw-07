@@ -9,7 +9,7 @@
   &__container {
     @include createFlex($direction: column);
   }
-  &--title {
+  &__title {
     width: 696px;
     margin-bottom: 30px;
     font-size: 44px;
@@ -19,7 +19,7 @@
     text-align: center;
     color: $white;
   }
-  &--btn {
+  &__btn {
     padding: 10px 32px;
     font-weight: 700;
     line-height: 1.875;

@@ -1,5 +1,5 @@
 .services {
-  &--title {
+  &__title {
     margin: 0 0 50px 0;
     text-align: center;
     font-size: 36px;
@@ -16,19 +16,19 @@
         display: flex;
         flex-direction: column;
         max-height: 294px;
-        &--description {
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          padding: 27px 0;
-          font-size: 14px;
-          letter-spacing: 0.03em;
-          font-weight: 700;
-          text-align: center;
-          text-transform: uppercase;
-          color: $white;
-          background-color: $second-bg-color;
-        }
+      }
+      &__description {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 27px 0;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+        background-color: $second-bg-color;
       }
     }
   }

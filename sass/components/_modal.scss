@@ -22,8 +22,8 @@
   background: $white;
   box-shadow: 0px 2px 1px 0px rgba(0 0 0 / 0.2), 0px 1px 1px 0px rgba(0 0 0 / 0.14),
     0px 1px 3px 0px rgba(0 0 0 / 0.12);
-  &__close {
-    &--btn {
+  .close {
+    &__btn {
       float: right;
       margin: 8px;
       padding: 6px 5px;
@@ -33,14 +33,14 @@
       border-radius: 50%;
       color: $black;
       background: $white;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-timing-function: $cubic;
       &:hover,
       &:focus,
       &:focus-within {
         color: $highlighted-color;
       }
     }
-    &--icon {
+    &__icon {
       width: 18px;
       height: 18px;
       fill: currentColor;
@@ -49,18 +49,6 @@
   &__form {
     margin: 40px;
     @include createFlex($direction: column);
-    &--btn {
-      width: 200px;
-      height: 50px;
-      @include createFlex;
-      gap: 20px;
-      border-radius: 4px;
-      background-color: $highlighted-color;
-      color: $white;
-      font-weight: 700;
-      line-height: 1.875;
-      box-shadow: 0px 4px 4px 0px rgba(0 0 0 / 0.15);
-    }
   }
   .form {
     &__group {
@@ -70,7 +58,7 @@
       border: none;
       gap: 10px;
     }
-    &--title {
+    &__title {
       width: 100%;
       font-size: 20px;
       font-weight: 700;
@@ -94,13 +82,13 @@
         fill: $highlighted-color;
       }
     }
-    &--input {
+    &__input {
       height: 40px;
       padding-left: 42px;
       font-size: 16px;
       border-radius: 4px;
       border: 1px solid rgba(33 33 33 / 0.2);
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-timing-function: $cubic;
       &:hover,
       &:focus,
       &:focus-within {
@@ -111,22 +99,22 @@
         color: $second-text-color-o50;
       }
     }
-    &--icon {
+    &__icon {
       position: absolute;
       left: 12px;
       top: calc(18px + 11px);
       width: 18px;
       height: 18px;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-timing-function: $cubic;
     }
-    &--textarea {
+    &__textarea {
       padding: 12px 16px;
       font-size: 12px;
       line-height: 1.17;
       letter-spacing: 0.01em;
       border-radius: 4px;
       border: 1px solid rgba(33 33 33 / 0.2);
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-timing-function: $cubic;
       &:hover,
       &:focus,
       &:focus-within {
@@ -139,20 +127,34 @@
     }
     &__terms {
       margin: 20px 12px 12px;
-      &--label {
-        display: flex;
-        align-items: baseline;
-        gap: 7px;
-        cursor: pointer;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: $second-text-color;
+      .terms {
+        &__label {
+          display: flex;
+          align-items: baseline;
+          gap: 7px;
+          cursor: pointer;
+          font-size: 14px;
+          line-height: 1.71;
+          letter-spacing: 0.03em;
+          color: $second-text-color;
+        }
+        &__input {
+          position: relative;
+          top: 2px;
+        }
       }
-      &--input {
-        position: relative;
-        top: 2px;
-      }
+    }
+    &__btn {
+      width: 200px;
+      height: 50px;
+      @include createFlex;
+      gap: 20px;
+      border-radius: 4px;
+      background-color: $highlighted-color;
+      color: $white;
+      font-weight: 700;
+      line-height: 1.875;
+      box-shadow: 0px 4px 4px 0px $black-o15;
     }
   }
 }

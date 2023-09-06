@@ -8,24 +8,24 @@
   .target {
     &__item {
       width: 270px;
-      &--icon {
-        padding: 25px 100px;
-        margin-bottom: 30px;
-        background-color: $third-bg-color;
-        border-radius: 4px;
-      }
-      &--title {
-        margin-bottom: 10px;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-      }
-      &--description {
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-      }
+    }
+    &__icon {
+      padding: 25px 100px;
+      margin-bottom: 30px;
+      background-color: $third-bg-color;
+      border-radius: 4px;
+    }
+    &__title {
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+    }
+    &__description {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
     }
   }
 }

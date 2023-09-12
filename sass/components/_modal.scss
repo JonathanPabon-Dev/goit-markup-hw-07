@@ -76,9 +76,9 @@
       font-size: 12px;
       letter-spacing: 0.01em;
       color: $second-text-color;
-      &:hover .form-icon,
-      &:focus .form-icon,
-      &:focus-within .form-icon {
+      &:hover .form__icon,
+      &:focus .form__icon,
+      &:focus-within .form__icon {
         fill: $highlighted-color;
       }
     }
